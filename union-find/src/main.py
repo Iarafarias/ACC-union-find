@@ -1,0 +1,2 @@
+"""Project entry point placeholder."""
+
