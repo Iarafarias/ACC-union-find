@@ -1,0 +1,4 @@
+algoritmo,instancia,n,runs,tempo_medio_s,desvio_padrao_s,tempo_ultima_execucao_s,qtd_operacoes
+quick_union,teste_100000,100000,1,1271.827456900035,0.0,1271.827456900035,99999
+ponderado_quick_union,teste_100000,100000,1,0.2152115000062622,0.0,0.2152115000062622,99999
+ponderado_quick_union,teste_500000,500000,1,1.2887798000010662,0.0,1.2887798000010662,499999

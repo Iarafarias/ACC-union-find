@@ -2,34 +2,32 @@ from __future__ import annotations
 
 
 class QuickFindUF:
-
     def __init__(self, n: int) -> None:
         if n < 0:
             raise ValueError("O n deve ser nao negativo")
 
         self.id: list[int] = list(range(n))
 
-        self.custoI: int = 0
-        self.totalAcessos: int = 0
-
-        self.custoI = n
-        self.totalAcessos = n
+        self.custo_i: int = 0
+        self.total_acessos: int = 0
+        self.custo_i = n
+        self.total_acessos = n
 
     def _validate_index(self, p: int) -> None:
         if not 0 <= p < len(self.id):
             raise IndexError(f"Indice fora do intervalo: {p}")
 
     def _start_operation(self) -> None:
-        self.custoI = 0
+        self.custo_i = 0
 
     def _read_id(self, index: int) -> int:
-        self.custoI += 1
-        self.totalAcessos += 1
+        self.custo_i += 1
+        self.total_acessos += 1
         return self.id[index]
 
     def _write_id(self, index: int, value: int) -> None:
-        self.custoI += 1
-        self.totalAcessos += 1
+        self.custo_i += 1
+        self.total_acessos += 1
         self.id[index] = value
 
     def find(self, p: int) -> int:
